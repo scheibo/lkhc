@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <link rel="icon" href="../icon.ico">
+  <title>2012 Low-Key Hillclimbs</title>
+  <meta content="Daniel Connelly" name="author">
+  <meta content="2012 Low-Key Hillclimbs" name="description">
+<script language="JavaScript">
+<!--
+function displayEmail(account, server, domain, subject, text)
+{
+if (text.length == 0) {
+  text = account + "@" + server + "." + domain;
+}
+fulllink = "<i><a href='mailto:" + account + "@" + server + "." + domain + "?subject=" + subject + "' onMouseOver=\"this.className='linkon'\" onMouseOut=\"this.className='a'\">" + text + "</a></i>";
+document.writeln(fulllink);
+}
+
+function displayEmailnolink(account, server, domain)
+{
+  document.writeln("<i>" + account + "@" + server + "." + domain + "</i>");
+}
+-->
+</script>
+<style type="text/css">
+	a	{ text-decoration:none }
+	a	        { text-decoration:none; color:black; font-weight:bold; font-family: lucida sans, arial, comic sans ms; }
+	a:visited	{ color:black }
+	a:hover         { color:red }
+	a:active	{ color:red }
+</style>
+</head>
+<body
+ style="color: black; background-color: #ffccdd;"
+ alink="#000099" link="#000099" vlink="#990099">
+<!-- header -->
+<h1 align=center><big style="font-family: arial black;">2012 Low-Key Hillclimbs</big></h1>
+<h2 align=center>Scoring details</h2>
+<div align=center><a href="../../2012.html"><b><font size=+1>Go back to main page.</font></b></a></div><br>
+<!-- main content -->
+<table align=right border=0 cellpadding=0 cellspacing=5 width=350>
+<tr><td><img src="photo.jpg" alt="Low-Key Scoring Department" width=640 height=430></td></tr>
+<tr><td><center>Low-Key scoring department hard at work</center></td></tr>
+</table>
+<p>
+Scoring in the Low-Key Hillclimbs is simple!
+</p>
+<h3>divisions</h3>
+<p>
+Riders are divided by division.  For 2012 we have the following divisions:
+</p>
+<p>
+<dl>
+<dt><b>solo :</b></dt><dd>individual riders on human-powered vehicles, including bicycles, tricycles, unicycles, quadracycles, and we even allow runners.  Men and women are ranked separately.</dd>
+<dt><b>tandem :</b></dt><dd>riders on multi-rider bikes, for examples tandems, and triplets.  Riders pulling strollers or riders in strollers are also considered tandem riders.  Men and women are ranked together, where scores are adjusted from the time based on what fraction of the riders are women, as will be described</dd>
+<dt><b>running:</b></dt><dd>Runners are scored separately this year.  Men and women are ranked separately.</dd>
+<dt><b>hybrid-electric :</b></dt><dd>electric-assisted pedal-powered vehicles, where the vehicle, bicycle, tricycle, or quad (2-4 wheels), faired or un-faired, must comply with the following rules:
+<ol><li> Pedals and human power function: the vehicle must have functional pedals that allow the bicycle to be ridden on level ground 8 meters in a second solely under human power (18 mph for one second).</li><li>Only electric motors: the vehicle may use only electric motor or motors to assist propulsion.</li><li>Motor power limit: Participants must be able to demonstrate that the maximum continuous power drawn from all batteries is no greater than 1000 watts or that continuous motor power delivered to the rear wheel is no greater than 750 watts.</li><li>Battery mounting: batteries must be mounted securely to the vehicle frame. No backpack battery packs.</li></ol>Volunteers or Bill Bushnell reserve the right to judge compliance with the above rules and to disqualify any vehicle that is deemed to be inconsistent with a bicycling event. If you have any doubts about your entry please contact the event organizers ahead of time for approval.</dd>
+</dl>
+</p>
+<h3>individual scores</h3>
+<p>
+There's big changes to the individual scoring for 2012.
+</p>
+<p>
+First, each rider's time is adjusted by a factor determined from an analysis for series data from 1995
+through 2011 (the last two years used coefficients through 2009).
+Women have their times multiplied by 82.9%, hybrid-electrics have their times multiplied
+by 172.1%, while men keep their time.  Hybrid Electrics have gotten faster over the years,
+so the Hybrid Electric factor is higher; the women's factor was revised only +0.1%.
+</p>
+<p>
+If there's a mixed tandem, the woman has her time adjusted while the man
+keeps his time unchanged.  This adjusted time is not what is shown on results, it is maintained internally
+in the scoring code only for score determination.  This was also new for 2011: in 2006 through
+2009, riders on a mixed tandem received the lowest (rather than the mean) score of riders on the
+tandem.  It's become clear over the years an average is fairer.  Note this is just a temporary step:
+at the end of this process each rider on a tandem will get the same score.  That's described in just a bit.  This
+is also unchanged for 2012.
+</p>
+<p>
+Now the change comes.  In 2011, adjusted times were ranked and a median was taken.  However, this tended to
+mean if more faster climbers showed up in a given week, everyone scored lower.  If more slower riders showed up,
+then scores tended to be higher.  So we still take the median time, but only as an initial estimate.  After one
+week it's all we have, so we rank with median.  But after week one, we use a &quot;reference time&quot; for each week
+which will generally deviate from the median time.
+</p>
+<p>
+To get a median time, we take the <a href="http://en.wikipedia.org/wiki/Geometric_mean">geometric mean</a> of ratings
+for riders in that week and multiply that by the geometric mean of selected rider effective times for the week multiplied
+by rider weights.  To get the selected times, we omit any time with a special code: tandem, unicyclist, runner,
+mishap, or wrong turn.  For the weights, the weight for each rider is a heuristic weight which goes from 0 if
+the rider does only one climb to 1 if the rider does an infinite number of climbs.  The weight is based on the
+sum of the statistical weights of the climbs the rider does, and also on the number of climbs the rider
+does.  This seems complicated, but the key thing is the goal is to get something close to the mean time for
+the climb if the riders showing for that climb were selected at random from riders participating in climbs
+throughout the series, paying more attention to riders who do more climbs because they have more data behind
+the estimate of how fast they are.
+<p>
+Then we need to calculate rider ratings.   A rider's rating is based on how well he or she does, on average,
+compared to the reference times for the applicable weeks.  It's another geometric mean, this time of the ratio
+of the rider's time to the reference time for each week.  Weeks are weighted based on a heuristic weighting
+factor which gets closer to one the more riders, and the average statistical weight per rider, participating
+in the climb.  With robust turn-out week-to-week, the statistical weights for weeks tend to be close to the
+limit of one.
+</p>
+<p>
+The issue here is that the reference time for weeks, rider ratings, and statistical weights for weeks
+and riders are all interdependent.  So this calculation is done iteratively until self-consistency
+is reached, typically in around 8 iterations.
+</p>
+<p>
+That was a lot.  But all that matters from this process is the set of reference times for weeks.  These
+take the place of the "median time" used in years past.  Once reference times are determined, we're back
+on familiar ground.
+</p>
+<p>
+But then we do one more adjustment.  In addition to a reference time for a week, we calculate an additional &quot;slope factor&quot;.
+This describes how much times vary from one rider to another.  Steeper climbs tend to spread riders out more, while climbs with
+descents tend to result in a closer fractional grouping of times.  The slope factor adjusts for this.  So if you finish
+10% away from the medium time, on a climb with descents this might get adjusted to 12% away, while on a very challenging climb
+it might get adjusted to only 8% away.  It seems complex, and it is, but the whole point is that points should reflect
+how well you did in a given week, without biasing the results towards certain weeks depending on turn-out or on steepness.
+</p>
+<p>
+For each rider, the ratio of this reference time to their adjusted time multiplied by 100 is their score for the
+week.   For mixed tandems, this will give each rider a different score, so these different scores are averaged.
+The result is assigned to each rider on the mixed tandem so they each score the same.  As a result, a rider in a mixed tandem may
+appear out of place in the standings, with a time which is higher or lower than the time of other riders
+receiving a similar score.
+</p>
+<p>
+At the end of the 8-week series, your overall score is calculated as the sum of your four best scores
+(during the series, or if climbs are canceled, it's half the climbs completed, rounded up):
+you get four throw-aways.  These throwaways become available at weeks two, four,
+six, and eight, so after three weeks, for example, it's top two scores.
+</p>
+<p>
+Those who've volunteered at least one week where volunteering caused them to not be able to climb,
+or who received volunteer credit for some non-Low-Key event (like a memorial ride), get to
+drop an extra score (assuming there's still at least one counting score, of course), and pro-rate
+their total score.  For example, instead of four counting scores, they can count three, then multiply their
+total by 4/3.   This basically counts their average counting score for that extra dropped score.
+Volunteer three times or more, and you can drop up to two scores (this was new for 2008).
+</p>
+<p>
+One issue with this new scheme is scores for a given week are not final until the series is over.
+This is because the reference time for a week will change depending on how riders who participated
+in that week demonstrate their speed relative to other riders in following weeks.  However, experiments
+have shown that the relative score between two weeks shouldn't change more than 1%.  So if you're ahead
+of another rider by more than one point in the overall standings it is unlikely reevaluation of
+reference times will change that you are ahead of that rider.
+If you are ahead by 0.1 points, on the other hand, that lead is not secure until the end of the
+series.
+</p>
+<p>
+And of course, it needs to be said that to get a score, you need to wear your helmet.  Sorry, kids!
+</p>
+<h3>Tandems</h3>
+<p>
+Another change to the scoring this year is how tandems are treated.  Tandem riders are individually initially scored
+as if they were riding solo (with the exception that they don't contribute to the week's reference
+score).  Thus, if they are both male or both female, they each get the same score.  But if one is male
+and the other female, they get different scores due to the adjustment factor.  To resolve this, the scores
+are then averaged, so the same score can be assigned to each rider.  The result of this is that
+if a male-male tandem, a male-female tandem, and a female-female tandem each get the same time, the
+female-female tandem will get the highest score, the male-female the next highest, and the male-male
+the lowest score of the three.  This is similar to last year.
+</p>
+<p>
+What's new for 2012 is how tandems affect the overall rankings.  Instead of mixing tandem and solo
+results, we'll have a separate ranking for just tandems, yielding a true tandem ranking.  So for riders
+who always ride tandem, they will appear in the tandem ranking rather than in the male or female rankings.
+Riders need not always partner together: although tandem partners receive the same score (assuming
+neither fails to finish!) for a given week, riders may ride different weeks with different partners.
+So scores are assigned to individual riders, not directly to tandem pairs.
+</p>
+<p>
+The tricky bit is if riders ride tandem some weeks and solo other
+weeks.  In this case scores ridden solo will contribute to solo
+rankings, while weeks ridden tandem will contribute to tandem
+rankings.  But when a rider rides a tandem, he or she receives a "ride
+credit" (RC) for other rankings (this is equivalent to volunteer
+credit).  So for example one or two volunteer or ride credit weeks reduces the
+required number of participation weeks by one, while three or more
+volunteer or ride credit weeks reduces the number of required scores by two for
+overall rankings.  This makes it easier for riders to take advantage
+of occasional tandem riding opportunities, or to use solo rides when a
+tandem partner is unavailable to contribute to maintaining a position
+in the tandem rankings.
+</p>
+<p>
+Since tandem riders may ride different weeks with different partners, and tandem riders may have a different
+number of volunteer credits, tandem riders are listed and ranked individually in the overall rankings.  However,
+in the individual week rankings, they are listed and ranked as a pair.  So the second tandem is listed
+as second place for the week even though there would be more than one rider in the tandem ahead.
+</p>
+<h3>team scores</h3>
+<p>
+Team scores are calculated using the top <i>three</i> riders in each team for a given week.
+Overall team score is calculated using the same number of weeks as individual overall scores.
+Riders on the same tandem contribute individually to the team score for the week.
+</p>
+<p>
+To not penalize teams' overall rankings for riders volunteering, any team rider who isn't able to ride in
+a week due to volunttering contributes their median score to the team's score for that
+week as applied to overall score.  In contrast, a team's score and ranking for the week itself
+(not as applied to overall) includes only riders who rode that week's climb: volunteers don't
+contribute.  This is because the week's standings represent performance only on that particular
+hill, without direct influence of performance of other climbs.
+</p>
+<p>
+Change for 2011: in prior years, aggressive recruiting of riders from other teams could
+net the rider's scores for the whole year, starting week 1.  No more!  As of 2011
+team changes begin only when the rider first signs in with the new team.
+If a rider changes teams during the year, the previous team keeps points the rider
+contributed during weeks he or she was on the team.  For volunteer points, a volunteer
+who has not yet ridden scores points for those weeks for the team the rider first rides with,
+otherwise if a volunteer has already ridden, the points go to the team the rider last rode with,
+since we do not assign teams to volunteers who have not yet ridden.
+</p>
+<h3>most improved rider</h3>
+<p>
+Honestly the most improved rider standings always seemed more the result of random events than actual
+rider improvement during the year, so we're retiring this ranking for 2012.
+</p>
+<h3>most improved from last year</h3>
+<p>
+The most improved from last year is calculated by comparing the difference
+of your <i>median</i> score from this year to your median score from
+last year, using scores from solo men's and women's divisions (<b>new for 2011</b>).
+So bad luck on one or two rides won't affect your result here,
+much. This classification will be limited to those
+who rode or volunteered in at least 3 climbs from both this year and the
+year prior.
+</p>
+<h3>most consistent rider</h3>
+<p>
+This is a rider who generally scores most consistently during the series, given preference for riders who've done
+more climbs since it's harder to keep consistent over a larger number of climbs.
+</p>
+<p>
+The score is based on the natural logarithm of the scores.  Given a set of
+scores, we calculate the standard deviation of the population.   But since riders doing
+fewer rides are more likely to get a low standard deviation by luck, we add in two standard
+errors of the estimate of the &quot;true&quot; standard deviation of the riders 
+probability distribution for the log of the scores.
+I thus  multiply this calculated standard deviation by 1 + ( 8 / [ <i>N</i> - 1 ] ),
+where <i>N</i> is the number or rides for the rider.  Volunteer weeks and weeks riding a
+tandem are not included in the calculation, and the rider must have at least half as many times as there are weeks
+so far in the series (the formula is slightly changed from 2011 to 2012 to further acknowledge the increased
+difficulty of maintaining a tight score distrobution over more weeks).
+</p>
+<h3>endurance competition</h3>
+<p>
+There will be a special ranking for riders who have accumulated the most total climbing
+time during the series, acknowledging their superior demonstration of endurance
+</p>
+<h3>Mass-Adjusted Climbing (MAC) score</h3>
+<p>
+This is a "fun" ranking based on body masses optionally reported by riders
+(<a href="https://docs.google.com/spreadsheet/viewform?formkey=dHE1cGFoRXEwSWRLN1ZnU1pQVE1uN0E6MQ" target="MAC_window">enter your body mass here</a>). 
+It is the maximum rate of climbing (VAM) for a rider
+in any week he/she participated multiplied by the grass altitude
+gained by a climb divided by the effective time (division-adjusted),
+reported in kg m / sec.  This is closely correlated with average
+power, but it's grossly oversimplified, so don't take it too
+seriously.  It's just a fun ranking to give the big guys a chance to
+put the little climbers in their place.  Riders are ranked separately
+by division, although divisions are combined on the same table.
+Change during 2012: Now effective time, rather than raw time, is used.
+</p>
+<h3>100% club</h3>
+<p>
+The 100% club consists of riders who've climbed, or gotten volunteer credit for, every climb in
+the series.  Either activity helps make the series a success.  Thanks!!!
+</p>
+<h2>Contact</h2>
+<noscript>Dan Connelly: <img src="http://lowkeyhillclimbs.com/2012/scoring/contact.png"></noscript><script language="JavaScript">displayEmail("djconnel","yahoo","com","Low-Key Hillclimbs: Scoring","Dan Connelly");</script>
+<hr>
+<font size=-2><i>Dan Connelly</i></font>
+</body>
+</html>

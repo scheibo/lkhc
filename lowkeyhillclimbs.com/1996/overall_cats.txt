@@ -1,0 +1,299 @@
+
+pl num name                 mf cat                     score
+1  num name                 mf cat                     score
+
+pl num name                 mf cat                     score
+1  25  Hackell,Stella       f  -                       661.985
+2  235 Trail,Lisa           f  -                       581.818
+3  236 Taylor,Jane          f  -                       502.618
+
+pl num name                 mf cat                     score
+1  225 Kelly,Mathew         m  15-18                   534.870
+
+pl num name                 mf cat                     score
+1  62  Hurkmans,Henry       m  180lb+                  1823.966
+2  122 Fenzi,Millo          m  180lb+                  1571.806
+
+pl num name                 mf cat                     score
+1  87  Wilkinson,Jim        m  35-45                   3176.172
+2  46  Herms,Richard        m  35-45                   3119.086
+3  53  Pugh,Luther          m  35-45                   2723.812
+4  146 Evitt,Eric           m  35-45                   1894.749
+5  112 Stanley,Hal          m  35-45                   1695.373
+6  61  Blair,Steve          m  35-45                   1596.537
+7  159 Yorston,Karl         m  35-45                   1447.706
+8  148 Jaworkski,Ted        m  35-45                   1307.448
+9  215 Barsh,Greg           m  35-45                   1267.891
+10 212 Martin,Scott         m  35-45                   728.987
+11 116 Roberts,Scott        m  35-45                   716.509
+12 147 Smith,Bradford       m  35-45                   655.747
+13 82  Goldbeck,Steve       m  35-45                   629.697
+14 221 Moore,Bill           m  35-45                   628.513
+15 74  Brokeshoulder,Darrel m  35-45                   619.847
+16 157 King,Archie          m  35-45                   613.127
+17 72  Barth,Scott          m  35-45                   602.039
+18 169 Sutton,Ken           m  35-45                   601.136
+19 161 Hargrove,Val         m  35-45                   571.223
+20 42  Haughey,Jim          m  35-45                   565.854
+21 67  Hogenson,Brent       m  35-45                   539.311
+22 155 Pflasterer,Jim       m  35-45                   518.108
+23 211 Moore,Greg           m  35-45                   0.000
+24 111 Halverson,Robin      m  35-45                   0.000
+
+pl num name                 mf cat                     score
+1  38  Herman,Gary          m  45-55                   2502.291
+2  85  Robinson,Dick        m  45-55                   2482.414
+3  108 Calhoon,Stuart       m  45-55                   2420.185
+4  48  Rodemaker,Mark       m  45-55                   2411.785
+5  55  McCoy,Jim            m  45-55                   2383.585
+6  84  Ames,Roy             m  45-55                   2043.247
+7  56  Vogel,John           m  45-55                   2030.298
+8  131 Fulton,Dick          m  45-55                   1604.073
+9  164 Lebard,Ron           m  45-55                   1564.687
+10 165 Sienna,Phil          m  45-55                   1156.863
+11 223 Elgart,John          m  45-55                   753.859
+12 222 Williams,Al          m  45-55                   634.530
+13 124 Faulhaber,Bob        m  45-55                   608.970
+14 156 Bolander,Larry       m  45-55                   565.125
+15 86  Haugner,James        m  45-55                   500.874
+
+pl num name                 mf cat                     score
+1  12  Miller,Ed            m  55-65                   2782.695
+2  93  McDermand,Bob        m  55-65                   2668.368
+3  89  Lowman,Tom           m  55-65                   2121.697
+4  219 Turner,Jim           m  55-65                   671.855
+5  40  McMahan,Mike         m  55-65                   465.163
+
+pl num name                 mf cat                     score
+1  224 Hlady,Mark           m  Canuck                  800.000
+
+pl num name                 mf cat                     score
+1  163 Heller,Pete          m  Duck_Club               1592.589
+
+pl num name                 mf cat                     score
+1  45  Bloom,Greg           m  MTB                     2462.048
+2  101 Dickie,Brock         m  MTB                     1868.389
+3  121 Hardy,Robert         m  MTB                     1431.310
+4  31  Wyandt,David         m  MTB                     739.022
+5  178 Cardwell,J.          m  MTB                     707.611
+6  231 Schmidt,Todd         m  MTB                     540.845
+7  227 Park,Tim             m  MTB                     499.675
+8  68  Emmons,Russ          m  MTB                     477.823
+9  196 Jones,David          m  MTB                     424.561
+
+pl num name                 mf cat                     score
+1  226 Claus,Santa          m  North_Pole_Riders       0.000
+
+pl num name                 mf cat                     score
+1  218 Pereira,Patrick      m  SLO_Mtn_Climber         335.381
+
+pl num name                 mf cat                     score
+1  0   Winterfield,Kevin    m  USCF_2                  3156.719
+2  187 Johnston,Jim         m  USCF_2                  1880.106
+3  11  Leman,Steve          m  USCF_2                  784.068
+4  90  Tapscott,Peter       m  USCF_2                  631.131
+
+pl num name                 mf cat                     score
+1  6   Good,Gordan          m  USCF_3                  2847.937
+2  117 Crannell,Loren       m  USCF_3                  1780.962
+3  36  Lindberg,Craig       m  USCF_3                  1365.471
+4  73  Kretschmann,John     m  USCF_3                  495.500
+
+pl num name                 mf cat                     score
+1  1   Connelly,Daniel      m  USCF_4                  3234.115
+2  70  Studenicka,Todd      m  USCF_4                  3181.428
+3  20  Hawley,Lorin         m  USCF_4                  3142.679
+4  91  Schott,Rob           m  USCF_4                  2994.314
+5  132 Anderson,Mark        m  USCF_4                  2233.594
+6  99  Long,Richard         m  USCF_4                  1835.534
+7  35  Buchanan,Mike        m  USCF_4                  1266.806
+8  96  Kendall,Lee          m  USCF_4                  1251.739
+9  193 Wilder,Michael       m  USCF_4                  1192.601
+10 120 Hsu,Brian            m  USCF_4                  728.101
+11 220 Wong,Patrick         m  USCF_4                  622.505
+12 34  Motta,Neal           m  USCF_4                  578.708
+13 186 Reddy,Achut          m  USCF_4                  0.000
+
+pl num name                 mf cat                     score
+1  139 Podgorski,Mike       m  USCF_5                  3346.298
+2  168 Chadwick,Glenn       m  USCF_5                  2805.136
+3  27  Begley,Brian         m  USCF_5                  1560.880
+4  197 Simpkinson,Doug      m  USCF_5                  1294.175
+5  26  Axelrad,Valery       m  USCF_5                  1257.077
+6  180 Carmichael,Rick      m  USCF_5                  1207.487
+7  171 Spata,Robert         m  USCF_5                  1109.589
+8  16  Hirsch,Bennett       m  USCF_5                  1049.909
+9  75  Jessen,Mike          m  USCF_5                  1047.761
+10 18  Johansson,Henrik     m  USCF_5                  800.000
+11 29  Glueck,Brian         m  USCF_5                  664.552
+12 184 Grote,Mike           m  USCF_5                  661.429
+13 76  Lau,Garrett          m  USCF_5                  476.596
+14 173 Love,Wyland          m  USCF_5                  467.059
+15 71  Campbell,Bob         m  USCF_5                  402.603
+
+pl num name                 mf cat                     score
+1  10  Curran,Lisa          f  USCF_W4                 1252.283
+2  199 Harris,Holly         f  USCF_W4                 800.000
+
+pl num name                 mf cat                     score
+1  47  Herms,Cheryl         f  W35-45                  3356.217
+2  81  Jung-Ames,Julia      f  W35-45                  2853.402
+3  110 Stern,Laura          f  W35-45                  1500.000
+4  115 Forbes,Donamarie     f  W35-45                  734.239
+
+pl num name                 mf cat                     score
+1  100 Olrich,Phyllis       f  W45-55                  3177.139
+2  80  Robinson,Roxanne     f  W45-55                  2699.985
+3  123 Edwards,Sandra       f  W45-55                  354.661
+
+pl num name                 mf cat                     score
+1  118 Colwell,Julie        f  Wpublic                 2919.931
+2  172 Neubauer,Kristen     f  Wpublic                 2084.367
+3  150 Antonino,Lisa        f  Wpublic                 2022.426
+4  21  Jaremizuh,Connie     f  Wpublic                 1248.115
+5  119 Chamness,Kim         f  Wpublic                 667.206
+6  17  Osmon,Cindy          f  Wpublic                 651.540
+7  174 Saibuya,Kana         f  Wpublic                 567.299
+
+pl num name                 mf cat                     score
+1  202 Schermer,Mark        m  almost_over_the_hill    1008.736
+
+pl num name                 mf cat                     score
+1  170 Weiler,Chris         m  clydesdale              1181.135
+
+pl num name                 mf cat                     score
+1  8   Benishin,Liz         f  fried                   3559.808
+2  58  Baenen,Pat           f  fried                   3180.087
+3  9   Smith,Wayne          m  fried                   2171.786
+
+pl num name                 mf cat                     score
+1  177 Carry,Mark           m  jive                    970.761
+
+pl num name                 mf cat                     score
+1  63  Flynn,Mark           m  just_make_it_to_the_top 1383.295
+2  65  Goodman,Cris         f  just_make_it_to_the_top 0.000
+
+pl num name                 mf cat                     score
+1  162 Denardi,Michael      m  none                    1945.004
+2  179 Emmel,John           m  none                    1751.104
+3  209 Snyder,David         m  none                    1553.869
+4  190 Nix,Marc             m  none                    1415.323
+5  166 Brunner,Ruedi        m  none                    1372.344
+6  182 Watson,Andrew        m  none                    904.875
+7  185 Spurling,James       m  none                    745.464
+8  210 Nasen,Dea            f  none                    736.229
+9  189 Hutcheson,Charles    m  none                    702.232
+10 160 Hossack,John         m  none                    656.651
+11 230 Pietrofesa,Mark      m  none                    647.555
+12 183 Hansen,Bill          m  none                    628.571
+13 206 Rider_206            m  none                    620.807
+14 234 Harrison,Dave        m  none                    610.493
+15 204 Salehi               m  none                    587.115
+16 188 Herman,James         m  none                    579.908
+17 203 Patterson,Jim        m  none                    576.459
+18 208 Wolfert,Randy        m  none                    570.728
+19 233 Pufahl,Randy         m  none                    563.463
+20 167 Mathews,Alex         m  none                    554.921
+21 207 Cady,S               m  none                    543.181
+22 205 Rautenberg           m  none                    538.126
+23 228 Cliff,Susie          f  none                    508.165
+24 13  Farkas,Greg          m  none                    459.244
+25 194 Wagner,Jered         m  none                    456.935
+26 192 Schmidt,William      m  none                    432.737
+27 191 Johnson,Barry        m  none                    428.903
+28 200 Lopez,Julie          f  none                    390.977
+29 195 Tanner,Jim           m  none                    334.948
+30 60  rider_60             m  none                    0.000
+31 201 Johnston,Jim         m  none                    0.000
+32 141 Young,Peter          m  none                    0.000
+33 140 Rocha,Paul           m  none                    0.000
+34 7   Caragio,Mark         m  none                    0.000
+35 5   Whipple,Rich         m  none                    0.000
+36 4   Hernandez,Ken        m  none                    0.000
+37 3   Stanley,Clarke       m  none                    0.000
+38 2   Schmidt,Todd         m  none                    0.000
+39 175 Burnett,Damien       m  none                    0.000
+
+pl num name                 mf cat                     score
+1  98  Colwell,Tracy        m  public                  3594.821
+2  24  Alafouzos,John       m  public                  2965.768
+3  83  Cosentino,Giorgio    m  public                  2928.678
+4  113 Rienhardt,Scott      m  public                  2909.695
+5  52  Stephens,Duane       m  public                  2853.062
+6  127 Preas,Chris          m  public                  2850.457
+7  23  Pereira,Lucas        m  public                  2793.700
+8  43  Bushnell,Bill        m  public                  2735.399
+9  114 Anderson,Rich        m  public                  2676.074
+10 44  Maslen,Thomas        m  public                  2625.258
+11 92  Rescorla,Eric        m  public                  2617.664
+12 109 Martinez,Jonathan    m  public                  2526.156
+13 59  Weston,Mike          m  public                  2406.641
+14 79  Nelson,Randy         m  public                  2341.942
+15 64  Morris,Stephen       m  public                  2309.137
+16 149 Straub,Ken           m  public                  2254.823
+17 133 Crawford,Chris       m  public                  1984.972
+18 105 Siehl,Dan            m  public                  1969.959
+19 77  Imacseng,Mac         m  public                  1689.884
+20 39  Baltz,Jim            m  public                  1505.816
+21 104 Lund,Thomas          m  public                  1324.444
+22 37  Jackson,Dale         m  public                  1184.449
+23 28  Coale,David          m  public                  1160.626
+24 30  Harding,Maynard      m  public                  1148.285
+25 125 Beschle,John         m  public                  1139.193
+26 153 Mostats,Mike         m  public                  1079.877
+27 95  Begley,Al            m  public                  1046.157
+28 107 Johnson,Eric         m  public                  965.750
+29 32  Dumouchel,Jean       m  public                  828.171
+30 94  Clifford,Mark        m  public                  719.654
+31 130 Johnson,Mark         m  public                  704.260
+32 54  Palmer,Jim           m  public                  692.168
+33 88  Wong,Leo             m  public                  667.631
+34 158 Allen,Eric           m  public                  663.048
+35 33  Pravetz,Jim          m  public                  644.444
+36 22  Chung,Mark           m  public                  640.947
+37 134 Holland,Ben          m  public                  633.412
+38 50  Custodio,Tony        m  public                  623.417
+39 69  Lawrence,Tom         m  public                  617.490
+40 78  Ryan,Patrick         m  public                  605.688
+41 41  Bonachita,Joe        m  public                  603.437
+42 145 Parker,Brian         m  public                  594.386
+43 128 Prewett,Woody        m  public                  590.046
+44 213 Zaharis,Tom          m  public                  589.487
+45 135 Wilson,Charles       m  public                  576.881
+46 102 Bone,Richard         m  public                  559.731
+47 19  Schwappach,Jim       m  public                  538.864
+48 106 Spencer,Garth        m  public                  529.258
+49 136 Sebastiani,Marco     m  public                  518.430
+50 66  Ranekketti,Scott     m  public                  508.294
+51 129 Clarke,Kevin         m  public                  485.594
+52 103 Cuevas,Marc          m  public                  483.115
+53 97  Bennett,Derek        m  public                  481.019
+54 49  Cavalieni,Jeff       m  public                  473.469
+55 126 Keagy,Tyler          m  public                  433.923
+56 214 Mircik,Paul          m  public                  374.949
+57 217 Ralph,Robert         m  public                  374.874
+58 216 Morris,Simon         m  public                  0.000
+
+pl num name                 mf cat                     score
+1  15  Kinell,Don           m  recumbent               310.888
+2  14  Fernandez,Rauel      m  recumbent               264.065
+
+pl num name                 mf cat                     score
+1  142 Colwell,Judy         f  rides_with_bear         1433.432
+
+pl num name                 mf cat                     score
+1  198 Gellin,Gary          m  runner                  601.242
+
+pl num name                 mf cat                     score
+1  152 Trowbridge,Mike      m  tandem(mixed)           1926.500
+2  151 Jacobson,Charlotte   f  tandem(mixed)           1926.500
+3  229 Trail,Mark           m  tandem(mixed)           581.818
+4  232 Taylor,Paul          m  tandem(mixed)           502.618
+5  138 Anderson,Richard     m  tandem(mixed)           383.646
+6  137 Anderson,Ann         f  tandem(mixed)           383.646
+
+pl num name                 mf cat                     score
+1  176 Goebel,Patrick       m  triathlete              606.493
+
+pl num name                 mf cat                     score
+1  154 Boos.Freddy          m  wheelsuckers            2483.649

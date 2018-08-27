@@ -1,0 +1,900 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head>
+ 
+<!-- base href="regression.html" --><title>1996 Low-Key Hillclimbs: Regression</title></head><body background="regression.html">
+<h1>1996 Low-Key Hillclimbs: Regression</h1>
+<hr>
+<h2>The Results</h2>
+<table bgcolor="#eeeeee" border="2" cellpadding="3"><tbody><tr><td>
+<h3>Key</h3>
+<pre>week    :  week number
+rider   :  rider number
+#       :  approximate degrees of freedom contributing to the data.
+           These are non-integral because degrees of freedom for riders
+           are reduced for the degrees of freedom lost in determining
+           the weekly normalizations.  The degrees of freedom for weeks
+           are reduced for the degrees of freedom lost in determining
+           the rider scores.  The calculation is iterative.
+rating  :  for riders, the natural log of the rider's expected ratio
+           to the average speed.
+           for weeks, the natural log of the time in seconds for the
+           average rider.
+           Thus, the predicted time for a given rider in a given week
+           is exp(rating_rider + rating_week) seconds.
+sigma   :  the standard error associated with a rating
+</pre>
+</td></tr></tbody></table>
+<table bgcolor="#dddddd" border="2" cellpadding="3"><tbody><tr><td>
+<h3>Weeks</h3>
+<pre>week #       rating  sigma       climb
+1    31.647  7.75363 0.0398593   Montebello
+2    44.4949 7.98183 0.0356381   Page Mill Road
+3    45.3847 8.3447  0.02699     Mt Diablo
+4    54.5015 7.48581 0.0295556   Kings Mountain
+5    53.6109 8.07969 0.0443287   West 84 &amp; W OLH
+6    39.1248 7.76355 0.0395436   Bohlman-On Orbit-Bohlman
+7    42.7838 6.91905 0.0341594   Alpine &amp; Juaquin
+8    37.4537 7.93937 0.0296849   Hick's &amp; Loma Almaden
+9    44.1999 8.70311 0.0289379   Mt Hamilton Road
+X    21.4496 7.32499 0.0810513   Old La Honda Road
+</pre>
+</td></tr></tbody></table>
+<p>
+These raw ranking can be converted into hill conversion factors,
+represented in the following matrix:
+</p>
+<p>
+<table bgcolor="#dddddd" border="2" cellpadding="3"><tbody><tr><td>
+<pre>                           <b>t o   w e e k</b>
+    
+  -     1     2     3     4     5     6     7     8     9     X
+
+<b>f</b> 1     1.000 1.256 1.806 0.765 1.385 1.010 0.434 1.204 2.584 0.651
+
+<b>r</b> 2     0.796 1.000 1.437 0.609 1.103 0.804 0.345 0.958 2.057 0.518
+
+<b>o</b> 3     0.554 0.696 1.000 0.424 0.767 0.559 0.240 0.667 1.431 0.361
+
+<b>m</b> 4     1.307 1.642 2.361 1.000 1.811 1.320 0.567 1.574 3.378 0.851
+
+  5     0.722 0.907 1.303 0.552 1.000 0.729 0.313 0.869 1.865 0.470
+
+<b>w</b> 6     0.990 1.244 1.788 0.757 1.372 1.000 0.430 1.192 2.559 0.645
+
+<b>e</b> 7     2.304 2.894 4.161 1.763 3.192 2.327 1.000 2.774 5.954 1.501
+
+<b>e</b> 8     0.830 1.043 1.500 0.635 1.151 0.839 0.360 1.000 2.146 0.541
+
+<b>k</b> 9     0.387 0.486 0.699 0.296 0.536 0.391 0.168 0.466 1.000 0.252
+
+  X     1.535 1.929 2.772 1.174 2.127 1.550 0.666 1.849 3.967 1.000
+</pre>
+</td></tr></tbody></table>
+</p>
+<table bgcolor="#eeeeee" border="2" cellpadding="3"><tbody><tr><td>
+<h3>Riders</h3>
+<pre>rider #        rating      sigma
+14    0.984074 -0.750676   0
+123   0.988922 -0.745592   0
+200   0.988244 -0.682599   0
+218   0.988623 -0.611946   0
+15    0.984074 -0.58744    0
+217   0.988623 -0.500624   0
+214   0.988623 -0.500422   0
+195   0.987138 -0.471075   0
+185   1.97777  -0.438934   0.0758477
+137   0.988922 -0.412395   0
+138   0.988922 -0.412395   0
+228   0.976412 -0.409311   0
+63    3.95232  -0.385065   0.129368
+71    0.984074 -0.328921   0
+142   1.97734  -0.320458   0.008018
+126   0.988922 -0.28925    0
+56    7.89887  -0.287188   0.06064
+32    1.973    -0.256515   0.0124924
+80    5.9359   -0.253942   0.0407013
+182   1.97777  -0.235325   0.0414138
+196   0.987138 -0.233994   0
+191   0.987138 -0.223821   0
+174   0.990784 -0.219989   0
+192   0.987138 -0.21492    0
+13    0.984074 -0.197291   0
+40    0.984074 -0.184484   0
+84    5.92819  -0.176916   0.0611196
+129   0.988922 -0.176742   0
+177   1.97887  -0.175985   0.0186729
+81    5.92153  -0.171566   0.0368434
+97    0.988699 -0.169285   0
+49    0.984074 -0.166784   0
+103   0.988699 -0.164935   0
+64    8.89367  -0.160514   0.0227901
+194   0.987138 -0.160508   0
+76    0.984074 -0.160203   0
+68    0.984074 -0.157632   0
+210   0.988623 -0.15022    0
+225   0.988623 -0.145189   0
+10    1.97719  -0.140036   0.0261499
+197   2.96194  -0.13865    0.0675284
+173   0.990784 -0.138138   0
+17    0.984074 -0.136445   0
+58    8.88116  -0.131178   0.0576084
+86    0.988699 -0.128836   0
+73    0.984074 -0.121305   0
+25    0.984074 -0.120542   0
+119   0.988922 -0.113654   0
+79    6.91998  -0.111508   0.0076885
+136   0.988922 -0.111311   0
+205   0.98656  -0.108179   0
+59    9.87009  -0.105103   0.0484398
+16    1.9747   -0.101795   0.0357074
+207   0.98656  -0.0988288  0
+66    0.984074 -0.0958113  0
+85    8.88601  -0.0946885  0.0309075
+202   1.97687  -0.0920767  0.00898471
+21    1.97277  -0.0854065  0.0121905
+55    4.92605  -0.0831742  0.0535985
+100   6.91053  -0.0770808  0.046833
+118   5.92045  -0.0750928  0.0567755
+106   0.988699 -0.0737142  0
+107   1.97948  -0.0730018  0.00277274
+38    7.90505  -0.066382   0.027467
+89    4.94766  -0.0631822  0.0254037
+47    7.8906   -0.0588127  0.0321898
+190   2.96194  -0.0565618  0.0506294
+183   0.99063  -0.0556763  0
+121   2.96262  -0.0552238  0.0257693
+9     3.94996  -0.0531579  0.032044
+75    1.9727   -0.0515168  0.0437369
+208   0.98656  -0.0493581  0
+213   0.988623 -0.0479608  0
+159   2.96765  -0.0395697  0.0282118
+48    5.92959  -0.0383228  0.0239397
+19    0.984074 -0.0374093  0
+67    0.984074 -0.0365795  0
+155   0.990784 -0.0344097  0
+39    2.96162  -0.0286113  0.016978
+131   2.96817  -0.0212069  0.0211312
+204   0.98656  -0.0210511  0
+115   0.988922 -0.0179186  0
+102   0.988699 -0.0177349  0
+227   0.976412 -0.0158454  0
+151   3.95828  -0.015802   0.0138969
+152   3.95828  -0.015802   0.0138969
+44    7.89483  -0.0138222  0.0537359
+232   0.976412 -0.00997264 0
+236   0.976412 -0.00997264 0
+184   0.99063  -0.00472331 0
+135   0.988922 -0.00447972 0
+62    3.95248  -0.00440555 0.0229056
+30    1.9747   -0.00364245 0.00829667
+146   3.94439  0.00165159  0.0527561
+95    1.97948  0.00463461  0.0176936
+122   2.97034  0.00499541  0.0301333
+220   0.988623 0.00653884  0
+42    0.984074 0.0114638   0
+221   0.988623 0.0161438   0
+128   0.988922 0.0180848   0
+171   1.97941  0.0202143   0.00312445
+165   1.98141  0.0207741   0.00405197
+92    6.90847  0.0224632   0.0442421
+222   0.988623 0.0256709   0
+105   3.95903  0.0265655   0.0343722
+150   2.96966  0.0281093   0.0181596
+203   0.988244 0.0313138   0
+53    6.91829  0.0329005   0.022054
+34    0.984074 0.0339267   0
+167   0.990784 0.0342337   0
+206   0.98656  0.0347489   0
+23    8.89367  0.0390259   0.0385895
+170   1.98141  0.0419923   0.00593128
+109   5.93206  0.0430454   0.046531
+124   0.988922 0.0496534   0
+153   1.97903  0.0498533   0.00582125
+12    6.91633  0.0517648   0.0282747
+156   0.990784 0.0524534   0
+164   2.96654  0.0544596   0.0524685
+8     6.91681  0.0552699   0.0289824
+178   0.99063  0.0627683   0
+161   0.990784 0.063187    0
+231   0.976412 0.0633302   0
+27    2.96356  0.0666457   0.0154091
+108   4.94766  0.068528    0.0174084
+72    0.984074 0.0734504   0
+41    0.984074 0.07577     0
+188   0.987138 0.0778188   0
+78    0.984074 0.0794927   0
+215   1.97725  0.0812552   0.0640234
+172   2.96855  0.0818263   0.0190334
+61    2.96378  0.0819327   0.0325556
+219   0.988623 0.0828293   0
+125   1.97971  0.0829355   0.00297025
+93    5.93019  0.0838583   0.0263485
+179   2.96543  0.0861482   0.00623828
+52    9.87009  0.0883234   0.0404602
+134   0.988922 0.0890044   0
+112   2.96624  0.0909975   0.0375779
+180   1.96704  0.0911934   0.0280273
+35    1.9747   0.0919104   0.00770484
+24    8.89367  0.0956702   0.0271279
+199   0.987138 0.0959546   0
+114   5.93228  0.0977282   0.0270777
+69    0.984074 0.098792    0
+82    0.988699 0.100048    0
+90    0.988699 0.102323    0
+74    0.984074 0.102601    0
+145   0.990784 0.102935    0
+233   0.976412 0.104299    0
+50    0.984074 0.108343    0
+193   1.9737   0.111503    0.0159071
+37    1.97277  0.111519    0.0173242
+198   0.987138 0.113947    0
+169   0.990784 0.114228    0
+132   3.95642  0.115831    0.00444312
+91    6.92304  0.116247    0.0281384
+154   4.94336  0.118675    0.0245562
+28    1.97486  0.120727    0.00270629
+77    2.96169  0.121107    0.0224311
+176   0.990784 0.1231      0
+110   1.97948  0.127079    0.00388746
+157   0.990784 0.13398     0
+22    0.984074 0.136075    0
+229   0.976412 0.136355    0
+235   0.976412 0.136355    0
+163   1.97941  0.136801    0.00334122
+33    0.984074 0.141517    0
+149   3.95828  0.145565    0.0218166
+148   1.98141  0.146678    0.021887
+43    5.91774  0.151034    0.0417444
+6     4.9411   0.154099    0.0208203
+209   1.96503  0.155171    0.0569649
+45    4.93725  0.155433    0.0268866
+46    7.8906   0.158148    0.0431735
+88    0.988699 0.158544    0
+212   0.988623 0.164442    0
+99    2.97011  0.166966    0.0378676
+26    1.97277  0.171456    0.00357809
+29    0.984074 0.172242    0
+87    8.88601  0.173728    0.0303258
+117   2.95396  0.176579    0.0560572
+127   4.94572  0.176668    0.0390158
+70    6.91226  0.178509    0.0175664
+0     4.94105  0.179756    0.0274114
+113   4.94313  0.181492    0.0187196
+234   0.976412 0.184464    0
+20    9.87009  0.189009    0.0335662
+83    4.93994  0.190728    0.0311907
+130   0.988922 0.195031    0
+223   0.988623 0.197991    0
+147   0.990784 0.201182    0
+160   0.990784 0.202559    0
+158   0.990784 0.212255    0
+116   0.988922 0.212276    0
+54    0.984074 0.212957    0
+96    1.96511  0.215793    0.0475268
+187   2.96401  0.21889     0.0491922
+101   2.9624   0.221618    0.0302988
+120   0.988922 0.228323    0
+94    0.988699 0.23358     0
+166   1.97941  0.237474    0.035549
+1     7.89739  0.238551    0.0597298
+133   2.97034  0.241172    0.0468569
+230   0.976412 0.243401    0
+104   1.97948  0.244297    0.0367161
+168   4.94336  0.249947    0.0421082
+224   0.988623 0.257398    0
+139   6.90653  0.260411    0.0418354
+36    0.984074 0.263774    0
+162   2.96654  0.268084    0.00929699
+189   0.987138 0.269214    0
+31    0.984074 0.278455    0
+11    0.984074 0.337624    0
+18    0.984074 0.35774     0
+98    6.90676  0.366107    0.0494707
+</pre>
+</td></tr></tbody></table>
+<hr>
+<h2>The Details</h2>
+<p>
+A regression scheme was implemented to rank riders and weeks.
+This was done for the determination of "most improved" rider
+awards, for which it was important to determine the relative performance
+of the winners of each week, so the winner-normalized scores could
+be converted into a globally-normalized score.  Weeks in which
+riders exhibited anamolously low normalized scores were pruned
+from the data and then scores reiterated.  For example, weeks
+in which riders punctured were typically noted and eliminated from
+the data in this way.
+</p>
+<p>
+A shell script called <tt>weeks_to_regression</tt> was used to initiate
+the analysis:
+</p>
+<p>
+<table bgcolor="#dddddd" border="2" cellpadding="3"><tbody><tr><td>
+<small>
+<xmp>
+#! /bin/tcsh -f
+ 
+set fnet = "weeks.dat"
+ 
+cat $fnet | nawk -f weeks_to_regression.nawk
+</xmp>
+</small>
+</td></tr></tbody></table>    
+</p>
+<p>
+<tt>weeks_to_regression.nawk</tt> was as follows:
+</p>
+<p>
+<table bgcolor="#dddddd" border="2" cellpadding="3"><tbody><tr><td>
+<small>
+<xmp>
+BEGIN{
+  # team data
+  name_col = 0;
+  num_col = 0;
+
+  # rider data
+  name_col = 0;
+  cat_col = 0l
+  num_col = 0;
+  sex_col = 0;
+  url_col = 0;
+
+  if (getline s &lt; "riders.dat"){
+    n = split(s,a);
+    for (i=0; i++&lt;n;)
+      if (a[i]=="name")
+	name_col = i;
+      else if (a[i] == "#")
+	num_col = i; 
+      else if (substr(toupper(a[i]),1,3) == "SEX")
+	sex_col = i;
+      else if (substr(toupper(a[i]),1,3) == "CAT")
+	cat_col = i;
+      else if (substr(toupper(a[i]),1,3) == "URL")
+	url_col = i;
+ }
+  if ((!name_col)||(!cat_col)||(!num_col)||(!url_col)||(!sex_col)){
+    print "ERROR -- Rider data file not found";
+    exit;
+  }
+  while (getline s &lt; "riders.dat")
+    if (n = split(s,a)){
+      rider_name[a[num_col]] = convert_string(a[name_col]);
+      if (a[url_col] != "-")
+	rider_name[a[num_col]] = "&lt;a href=\"" a[url_col] "\"&gt;" rider_name[a[num_col]] "&lt;/a&gt;"
+      rider_sex[a[num_col]]  = toupper(a[sex_col]);
+      if ((rider_cat[a[num_col]]  = a[cat_col]) &gt; cat_max)
+	cat_max = a[cat_col];
+      cat_count[a[cat_col]]++;
+    }
+
+}
+(NF==0){
+  NR--;
+  next;
+}
+(NR==1){
+  rider_col = 0;
+  time_col = 0;
+  team_col = 0;
+  week_col = 0;
+  for (i=0; i++&lt;NF;)
+    if ($i == "rider")
+      rider_col = i;
+    else if ($i == "time")
+      time_col = i;
+    else if ($i == "team")
+      team_col = i;
+    else if ($i == "week")
+      week_col = i;
+  if  (rider_col == 0){
+    print "ERROR : column rider not found.";
+    exit;
+  }
+  if  (time_col == 0){
+    print "ERROR : column time not found.";
+    exit;
+  }
+  if  (team_col == 0){
+    print "ERROR : column team not found.";
+    exit;
+  }
+  if  (week_col == 0){
+    print "ERROR : column week not found.";
+    exit;
+  }
+  next;
+  n=0;
+}
+{
+  # tabulate results
+
+  if ((w=$week_col) &gt; week_max)
+    week_max = w;
+
+  if (($time_col != "*")&amp;&amp;((s = 1*time_to_sec($time_col)) &gt; 0)&amp;&amp;($rider_col != "-")){
+    week_sum_0[w] ++;
+    week_sum_1[w] += (res = result[n] = log(s));
+    rider_sum_0[$rider_col] ++;
+    rider_sum_1[$rider_col] += res;
+    sum_1 += res;
+    week[n]  = w;
+    rider[n++] = $rider_col;
+  }
+  avg = sum_1/n;
+  
+}
+
+END{
+
+  do {
+    prune_count = 0;
+    
+    iter=0;
+    do {
+      # calculate dof factors
+
+      for (w in week_sum_0)
+        if (week_sum_0[w] &lt;= 1)
+  	week_dof_factor[w] = 0;
+        else
+  	week_dof_factor[w] = sqrt(1 - 1/week_sum_0[w]);
+      
+      for (r in rider_sum_0)
+        if (rider_sum_0[r] &lt;= 1)
+  	rider_dof_factor[r] = 0;
+        else
+  	rider_dof_factor[r] = sqrt(1 - 1/rider_sum_0[r]);
+    
+      for (w in week_sum_0){
+        week_sum_old_0[w] = week_sum_0[w];
+        week_sum_0[w] = 0;
+      }
+      for (r in rider_sum_0){
+        rider_sum_old_0[r] = rider_sum_0[r];
+        rider_sum_0[r] = 0;
+      }
+  
+      ssr = 0;   # sum of the square of the residuals
+  		 
+      for (i=0; i&lt;n; i++)
+        if ((r = rider[i]) != "-"){
+          w = week[i];
+          week_sum_0[w] +=  rider_dof_factor[r];
+          rider_sum_0[r]  +=  week_dof_factor[w];
+        }
+  
+      sdsrs = 0;
+      for (r in rider_sum_0)
+        if (rider_sum_0[r] == 0){
+  	delete rider_sum_0[r];
+  	system("echo_stderr deleting rider " r);
+        }
+        else
+  	sdsrs += (rider_sum_0[r] - rider_sum_old_0[r])^2;
+  
+  
+      sdsws = 0;
+      for (w in week_sum_0)
+        if (week_sum_0[w] == 0){
+  	delete week_sum_0[w];
+  	system("echo_stderr deleting week " w);
+        }
+        else
+  	sdsws += (week_sum_0[w] - week_sum_old_0[w])^2;
+  
+      print "iteration of dof : " ++iter ", " sdsrs ", " sdsws;
+    } while (sdsws + sdsrs &gt; 1e-5);
+
+
+    if (prune_count == 0){
+      # first guess for week ratings
+      for (w in week_sum_0)
+	week_rating[w] = week_sum_1[w]/week_sum_0[w];
+  
+      # first guess for rider ratings
+      for (r in rider_sum_0)
+        rider_rating[r] = rider_sum_1[w]/rider_sum_0[w] - avg;
+    }
+  
+    
+    # iterate
+    iter = 0;
+    do{
+      system("echo_stderr -n iteration " iter " : ");
+  
+      for (w in week_sum_0){
+        week_sum_old_1[w] = week_sum_1[w];
+        week_sum_1[w] = week_ssr_1[w] = week_ssr_0[w] = 0;
+      }
+  
+      for (r in rider_sum_0){
+        rider_sum_old_1[r] = rider_sum_1[r];
+        rider_sum_1[r] = rider_ssr_1[r] = rider_ssr_0[r] = 0;
+      }
+  
+      for (i=0; i&lt;n; i++)
+	if ((r = rider[i]) != "-"){
+	  w = week[i];
+	  week_sum_1[w]  += (rider_dof_factor[r]) * (res - rider_rating[r]);
+	  rider_sum_1[r] += (week_dof_factor[w]) * ((res = result[i]) - week_rating[w]);
+	}
+  
+      # assertion : sum of all rider ratings is zero
+      # this should be dof-weighted, but it isn't important
+      rr_sum_0 = rr_sum_1 =0;
+      for (r in rider_sum_0){
+        rr_sum_0 ++;
+        rr_sum_1 += rider_sum_1[r] / rider_sum_0[r];
+      }
+      delta = rr_sum_1 / rr_sum_0;
+  
+      sdsrs = 0;
+      for (r in rider_sum_0){
+        rider_rating[r] =\
+          0.2 * rider_rating[r] +\
+          0.8 * (rider_sum_1[r]/rider_sum_0[r] - delta);
+        sdsrs += (rider_sum_1[r] - rider_sum_old_1[r])^2;
+      }
+  
+      sdsws = 0;
+      for (w in week_sum_0){
+        week_rating[w]  =\
+          0.2 * week_rating[w] +\
+          0.8 * (week_sum_1[w]/week_sum_0[w] + delta);
+        sdsws += (week_sum_1[w] - week_sum_old_1[w])^2;
+      }
+  
+      # calculate ssr
+      ssr_0 = ssr_1 = 0;
+      for (i=0; i&lt;n; i++)
+        if ((r = rider[i]) != "-"){
+          w = week[i];
+          ssr_1 +=\
+            (residual_squared[i] =\
+             sr =\
+             ((result[i] - rider_rating[r] - week_rating[w]) *\
+             (dof = rider_dof_factor[r] * week_dof_factor[w]))^2);
+          ssr_0 += dof;
+          rider_ssr_1[r] += sr;
+          rider_ssr_0[r] += dof;
+          week_ssr_1[w]  += sr;
+          week_ssr_0[w]  += dof;
+        }
+
+      sigma = sqrt(var = ssr_1/ssr_0);
+      system("echo_stderr rms residual = " sigma);
+      system("echo_stderr delta = " delta);
+   
+      print "ratings:",++iter,sdsrs,sdsws;
+    } while (sdsrs + sdsws &gt; 1e-4);
+
+    # prune underliers, indicating punctures, etc
+    for (i=0; i&lt;n; i++)
+      if (((r = rider[i]) != "-")&amp;&amp;(rider_ssr_0[r] &gt; 0)){
+        w = week[i];
+        threshold = week_rating[w] + rider_rating[r] + (dt = sqrt(2*var + 2*rider_ssr_1[r]/rider_ssr_0[r]));
+        if (result[i] &gt; threshold){
+          prune_count++;
+          rider[i] = "-";
+          print "rider " r ", week " w ", delta "\
+                 result[i] - threshold ", delta_t = " dt ", was pruned.";
+          print "rider " r ", week " w ", delta "\
+                 result[i] - threshold ", delta_t = " dt ", was pruned." &gt; "/tmp/prunes";
+        }
+      }
+  } while (prune_count &gt; 0);
+  
+  print "week","#","rating","sigma" &gt; "/tmp/weeks";
+  for (w in week_sum_0){
+    if (week_ssr_0[w] &gt; 0)
+      sigma = sqrt(week_ssr_1[w]/week_ssr_0[w]);
+    else
+      sigma = 0;
+    print w,week_sum_0[w],week_rating[w],sigma &gt; "/tmp/weeks";
+  }
+
+  print "rider","#","rating","sigma" &gt; "/tmp/riders";
+  for (r in rider_sum_0){
+    if (rider_ssr_0[r] &gt; 0)
+      sigma = sqrt(rider_ssr_1[r]/rider_ssr_0[r]);
+    else
+      sigma = 0;
+    print r,rider_sum_0[r],-rider_rating[r],sigma &gt; "/tmp/riders";
+  }
+
+  print "rider","week","result","residual" &gt; "/tmp/residuals";
+  for (i=0; i&lt;n; i++)
+    print rider[i], week[i], result[i],(result[i]-week_rating[week[i]]-rider_rating[rider[i]]) &gt; "/tmp/residuals";
+}
+
+
+  
+function convert_string(s)
+{
+  gsub("&lt;","&amp;lt;",s);
+  gsub("&gt;","&amp;gt;",s);
+  gsub("&amp;","&amp;amp;",s);
+  gsub("_"," ",s);
+  return s;
+}
+
+
+function print_header(){
+  print "&lt;tr&gt;" &gt;&gt; fout;
+  printf " &lt;th&gt;\n  rider\n &lt;/th&gt;\n" &gt;&gt; fout;
+  printf " &lt;th&gt;\n  team\n &lt;/th&gt;\n" &gt;&gt; fout;
+  printf " &lt;th&gt;\n  cat\n &lt;/th&gt;\n" &gt;&gt; fout;
+  printf " &lt;th&gt;\n  %cSpeed\n &lt;/th&gt;\n","%" &gt;&gt; fout;
+  print "&lt;/tr&gt;" &gt;&gt; fout;
+}
+
+function time_to_sec(s,n){
+  n = split (s,a,":");
+  if (n==1)
+    return a[1];
+  if (n==2)
+    return 60*a[1] + a[2];
+  if (n==3)
+    return a[3] + 60*(a[2] + 60*a[1]);
+  return 0;
+}
+
+</xmp>
+</small>
+</td></tr></tbody></table>    
+</p>
+<p>
+The rider data file is the following:
+</p>
+<p>
+<table bgcolor="#dddddd" border="2" cellpadding="3"><tbody><tr><td>
+<small>
+<xmp>
+#   sex cat name                 
+-   -   -   -                    
+0   M   2   Winterfield,Kevin    
+1   M   4   Connelly,Daniel      
+2   M   0   Schmidt,Todd         
+3   M   0   Stanley,Clarke       
+4   M   0   Hernandez,Ken        
+5   M   0   Whipple,Rich         
+6   M   3   Good,Gordan          
+7   M   0   Caragio,Mark         
+8   F   47  Benishin,Liz         
+9   M   47  Smith,Wayne          
+10  F   10  Curran,Lisa          
+11  M   2   Leman,Steve          
+12  M   18  Miller,Ed            
+13  M   0   Farkas,Greg          
+14  M   46  Fernandez,Rauel      
+15  M   46  Kinell,Don           
+16  M   5   Hirsch,Bennett       
+17  F   11  Osmon,Cindy          
+18  M   5   Johansson,Henrik     
+19  M   6   Schwappach,Jim       
+20  M   4   Hawley,Lorin         
+21  F   11  Jaremizuh,Connie     
+22  M   6   Chung,Mark           
+23  M   6   Pereira,Lucas        
+24  M   6   Alafouzos,John       
+25  F   10  Hackell,Stella       
+26  M   5   Axelrad,Valery       
+27  M   5   Begley,Brian         
+28  M   6   Coale,David          
+29  M   5   Glueck,Brian         
+30  M   6   Harding,Maynard      
+31  M   37  Wyandt,David         
+32  M   6   Dumouchel,Jean       
+33  M   6   Pravetz,Jim          
+34  M   4   Motta,Neal           
+35  M   4   Buchanan,Mike        
+36  M   3   Lindberg,Craig       
+37  M   6   Jackson,Dale         
+38  M   17  Herman,Gary          
+39  M   6   Baltz,Jim            
+40  M   18  McMahan,Mike         
+41  M   6   Bonachita,Joe        
+42  M   16  Haughey,Jim          
+43  M   6   Bushnell,Bill        
+44  M   6   Maslen,Thomas        
+45  M   37  Bloom,Greg           
+46  M   16  Herms,Richard        
+47  F   27  Herms,Cheryl         
+48  M   17  Rodemaker,Mark       
+49  M   6   Cavalieni,Jeff       
+50  M   6   Custodio,Tony        
+52  M   6   Stephens,Duane       
+53  M   16  Pugh,Luther          
+54  M   6   Palmer,Jim           
+55  M   17  McCoy,Jim            
+56  M   17  Vogel,John           
+58  F   47  Baenen,Pat           
+59  M   6   Weston,Mike          
+61  M   16  Blair,Steve          
+62  M   48  Hurkmans,Henry       
+63  M   49  Flynn,Mark           
+64  M   6   Morris,Stephen       
+65  F   49  Goodman,Cris         
+66  M   6   Ranekketti,Scott     
+67  M   16  Hogenson,Brent       
+68  M   37  Emmons,Russ          
+69  M   6   Lawrence,Tom         
+70  M   4   Studenicka,Todd      
+71  M   5   Campbell,Bob         
+72  M   16  Barth,Scott          
+73  M   3   Kretschmann,John     
+74  M   16  Brokeshoulder,Darrel 
+75  M   5   Jessen,Mike          
+76  M   5   Lau,Garrett          
+77  M   6   Imacseng,Mac         
+78  M   6   Ryan,Patrick         
+79  M   6   Nelson,Randy         
+80  F   28  Robinson,Roxanne     
+81  F   27  Jung-Ames,Julia      
+82  M   16  Goldbeck,Steve       
+83  M   6   Cosentino,Giorgio    
+84  M   17  Ames,Roy             
+85  M   17  Robinson,Dick        
+86  M   17  Haugner,James        
+87  M   16  Wilkinson,Jim        
+88  M   6   Wong,Leo             
+89  M   18  Lowman,Tom           
+90  M   2   Tapscott,Peter       
+91  M   4   Schott,Rob           
+92  M   6   Rescorla,Eric        
+93  M   18  McDermand,Bob        
+94  M   6   Clifford,Mark        
+95  M   6   Begley,Al            
+96  M   4   Kendall,Lee          
+97  M   6   Bennett,Derek        
+98  M   6   Colwell,Tracy        
+99  M   4   Long,Richard         
+100 F   28  Olrich,Phyllis       
+101 M   37  Dickie,Brock         
+102 M   6   Bone,Richard         
+103 M   6   Cuevas,Marc          
+104 M   6   Lund,Thomas          
+105 M   6   Siehl,Dan            
+106 M   6   Spencer,Garth        
+107 M   6   Johnson,Eric         
+108 M   17  Calhoon,Stuart       
+109 M   6   Martinez,Jonathan    
+110 F   27  Stern,Laura          
+111 M   16  Halverson,Robin      
+112 M   16  Stanley,Hal          
+113 M   6   Rienhardt,Scott      
+114 M   6   Anderson,Rich        
+115 F   27  Forbes,Donamarie     
+116 M   16  Roberts,Scott        
+117 M   3   Crannell,Loren       
+118 F   11  Colwell,Julie        
+119 F   11  Chamness,Kim         
+120 M   4   Hsu,Brian            
+121 M   37  Hardy,Robert         
+122 M   48  Fenzi,Millo          
+123 F   28  Edwards,Sandra       
+124 M   17  Faulhaber,Bob        
+125 M   6   Beschle,John         
+126 M   6   Keagy,Tyler          
+127 M   6   Preas,Chris          
+128 M   6   Prewett,Woody        
+129 M   6   Clarke,Kevin         
+130 M   6   Johnson,Mark         
+131 M   17  Fulton,Dick          
+132 M   4   Anderson,Mark        
+133 M   6   Crawford,Chris       
+134 M   6   Holland,Ben          
+135 M   6   Wilson,Charles       
+136 M   6   Sebastiani,Marco     
+137 F   51  Anderson,Ann         
+138 M   51  Anderson,Richard     
+139 M   5   Podgorski,Mike       
+140 M   0   Rocha,Paul           
+141 M   0   Young,Peter          
+142 F   53  Colwell,Judy         
+145 M   6   Parker,Brian         
+146 M   16  Evitt,Eric           
+147 M   16  Smith,Bradford       
+148 M   16  Jaworkski,Ted        
+149 M   6   Straub,Ken           
+150 F   11  Antonino,Lisa        
+151 F   51  Jacobson,Charlotte   
+152 M   51  Trowbridge,Mike      
+153 M   6   Mostats,Mike         
+154 M   55  Boos.Freddy          
+155 M   16  Pflasterer,Jim       
+156 M   17  Bolander,Larry       
+157 M   16  King,Archie          
+158 M   6   Allen,Eric           
+159 M   16  Yorston,Karl         
+160 M   0   Hossack,John         
+161 M   16  Hargrove,Val         
+162 M   0   Denardi,Michael      
+163 M   56  Heller,Pete          
+164 M   17  Lebard,Ron           
+165 M   17  Sienna,Phil          
+166 M   0   Brunner,Ruedi        
+167 M   0   Mathews,Alex         
+168 M   5   Chadwick,Glenn       
+169 M   16  Sutton,Ken           
+170 M   57  Weiler,Chris         
+171 M   5   Spata,Robert         
+172 F   11  Neubauer,Kristen     
+173 M   5   Love,Wyland          
+174 F   11  Saibuya,Kana         
+175 M   0   Burnett,Damien       
+176 M   58  Goebel,Patrick       
+177 M   59  Carry,Mark           
+178 M   37  Cardwell,J.          
+179 M   0   Emmel,John           
+180 M   5   Carmichael,Rick      
+182 M   0   Watson,Andrew        
+183 M   0   Hansen,Bill          
+184 M   5   Grote,Mike           
+185 M   0   Spurling,James       
+186 M   4   Reddy,Achut          
+187 M   2   Johnston,Jim         
+188 M   0   Herman,James         
+189 M   0   Hutcheson,Charles    
+190 M   0   Nix,Marc             
+191 M   0   Johnson,Barry        
+192 M   0   Schmidt,William      
+193 M   4   Wilder,Michael       
+194 M   0   Wagner,Jered         
+195 M   0   Tanner,Jim           
+196 M   37  Jones,David          
+197 M   5   Simpkinson,Doug      
+198 M   39  Gellin,Gary          
+199 F   10  Harris,Holly         
+200 F   0   Lopez,Julie          
+201 M   0   Johnston,Jim         
+202 M   60  Schermer,Mark        
+203 M   0   Patterson,Jim        
+204 M   0   Salehi               
+205 M   0   Rautenberg           
+206 M   0   Rider_206            
+207 M   0   Cady,S               
+208 M   0   Wolfert,Randy        
+209 M   0   Snyder,David         
+210 f   0   Nasen,Dea            
+211 m   16  Moore,Greg           
+212 m   16  Martin,Scott         
+213 m   6   Zaharis,Tom          
+214 m   6   Mircik,Paul          
+215 m   16  Barsh,Greg           
+216 m   6   Morris,Simon         
+217 m   6   Ralph,Robert         
+218 m   61  Pereira,Patrick      
+219 m   18  Turner,Jim           
+220 m   4   Wong,Patrick         
+221 m   16  Moore,Bill           
+222 m   17  Williams,Al          
+223 m   17  Elgart,John          
+224 m   62  Hlady,Mark           
+225 m   15  Kelly,Mathew         
+226 m   63  Claus,Santa          
+227 M   37  Park,Tim             
+228 F   0   Cliff,Susie          
+229 M   51  Trail,Mark           
+230 M   0   Pietrofesa,Mark      
+231 M   37  Schmidt,Todd         
+232 M   51  Taylor,Paul          
+233 M   0   Pufahl,Randy         
+234 M   0   Harrison,Dave        
+235 F   51  Trail,Lisa           
+236 F   51  Taylor,Jane          
+</xmp>  
+</small>
+</td></tr></tbody></table>
+</p>
+<hr>
+<address></address>
+<!-- hhmts start -->
+Last modified: Sun Aug 24 15:57:19 PDT 1997
+<!-- hhmts end -->
+
+
+</body></html>

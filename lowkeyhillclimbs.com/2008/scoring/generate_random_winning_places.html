@@ -1,0 +1,28 @@
+#! /usr/bin/perl
+
+sub shuffle_list {
+  my @a = ();
+  while (@_) {
+    push @a, splice @_, int(rand() * $#_), 1;
+  }
+  return @a;
+}
+
+my $n_winners = 3;
+my $pmax      = 200;
+
+my @l = shuffle_list(1 .. $pmax);
+
+# extract a list of possible winners
+my @winners = splice(@l, 0, $n_winners);
+my @lowest  = sort {$a <=> $b} @winners;
+while (@l && ($lowest[$n_winners - 1] > $n_winners)) {
+  my $x = shift @l;
+  if ($x < $lowest[-1]) {
+    @lowest = sort {$a <=> $b} ($x, @lowest[0 .. $n_winners - 2]);
+    push @winners, $x;
+  }
+}
+print "@winners\n";
+
+

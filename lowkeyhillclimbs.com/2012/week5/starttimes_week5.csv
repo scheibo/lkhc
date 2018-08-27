@@ -1,0 +1,129 @@
+time,div,rank,num,name,team,score,gap
+,,,,,,,
+10:00:00,t,1,12&13,Will & Lynn Von Kaenel,LGBRC,,
+10:00:30,t,2,32&33,Dan & Winnie Brehmer,,,
+10:01:00,t,3,429&406,Pauls McKenzie & Chuck,,,
+,,,,,,,
+10:02:00,f,1,423,Nina Komlik,,64.767,
+10:02:30,f,2,312,Andrea Ivan,Silicon Valley Triathlon,82.648,17.881
+10:03:00,f,3,440,Darlene Stevenson,,84.648,2
+10:03:30,f,4,50,Alison Chaiken,Sr's & Mr's of No Mercy,85.885,1.237
+10:04:00,f,5,301,Bobbi Aniker,,89.92,4.035
+10:04:30,f,6,91,Hannah Hausman,Hausbert,98.242,8.322
+10:05:00,f,none,514,Magdalena Novotna,El Camino Tri Club,none,NA
+10:05:30,f,7,422,Sandra King,Team Fremont FFBC p/b Chipotle,103.05,4.808
+10:06:00,f,8,408,Julie Colwell,Team Colwell,104.683,1.633
+10:06:30,f,9,79,Lisa Emmerich,Sr's & Mr's of No Mercy,107.849,3.166
+10:07:00,f,10,500,Mary Ellen Allen,Sr's & Mr's of No Mercy,108.906,1.057
+10:07:30,f,11,215,Laura Hipp,Western Wheelers,112.913,4.007
+10:08:00,f,12,404,Sugar Brown,TBZ,112.982,0.069
+10:08:30,f,13,113,Ginger Kroft,Western Wheelers,115.17,2.188
+10:09:00,f,14,8,Janet Martinez,Sr's & Mr's of No Mercy,120.299,5.129
+10:09:30,f,16,146,Lynn Sestak,The Brown Zone,121.894,-
+10:10:00,f,15,305,Amy Cameron,Sr's & Mr's of No Mercy,121.111,-
+10:10:30,f,17,129,Lisa Penzel,The Brown Zone,129.923,8.029
+,,,,,,,
+10:12:00,m,1,442,Matt Wittmann,,69.167,
+10:12:30,m,2,63,Skyler Colwell,Team Colwell,70.004,0.837
+10:13:00,m,3,524,Jeff Weitzman,Palo Verde Velo,70.4203,0.4163
+10:13:30,m,4,323,Tim Sutton,Plus 3,72.892,2.4717
+10:14:00,m,5,523,Frank Viggiano,Palo Verde Velo,75.9848,3.0928
+10:14:30,m,6,148,Gregory P. Smith,Google,76.541,0.5562
+10:15:00,m,7,441,Han Wen,GOM,79.122,2.581
+10:15:30,m,8,54,Barry Burr,Barry Beams Bike Lighting,79.853,0.731
+10:16:00,m,9,522,Luis Valente,Palo Verde Velo,82.4439,2.5909
+10:16:30,m,10,60,Fernando Colmenares,Team Fremont FFBC p/b Chipotle,83.379,0.9351
+10:17:00,m,11,68,Alex Cortez,Team Fremont FFBC p/b Chipotle,83.848,0.469
+10:17:30,m,12,225,Thomas Maslen,Western Wheelers,84.636,0.788
+10:18:00,m,13,405,Steve Bursley,Team Wild Hare,86.042,1.406
+10:18:30,m,14,428,Russ McCrary ,Sr's & Mr's of No Mercy,86.364,0.322
+10:19:00,m,15,506,Andre Gueziec,Palo Verde Velo,87.8055,1.4415
+10:19:30,m,16,26,Bernard Bell,,88.295,0.4895
+10:20:00,m,17,437,Eddie Santos,,88.685,0.39
+10:20:30,m,18,58,Kevin Colagiovanni,Team DUD,88.813,0.128
+10:21:00,m,19,84,Stephen Fong,CyclePath Racing,90.607,1.794
+10:21:30,m,20,127,Bart Niechwiej,Google,91.008,0.401
+10:22:00,m,21,160,Greg Watson,Palo Verde Velo,91.541,0.533
+10:22:30,m,22,77,Frank Drobot,Western Wheelers,92.041,0.5
+10:23:00,m,23,520,Bruno Tourette,Palo Verde Velo,92.3871,0.3461
+10:23:30,m,24,143,Wink Saville,google,92.525,0.1379
+10:24:00,m,25,234,Tommy Aldo Sonin,,92.607,0.082
+10:24:30,m,26,31,George Bonanto,Google,93.279,0.672
+10:25:00,m,27,83,David Fitch,Pan y Agua,93.482,0.203
+10:25:30,m,28,401,Nick Bellomo,Type 1 Diabetes,93.813,0.331
+10:26:00,m,29,65,Kevin Comerford,Sr's & Mr's of No Mercy,94.485,0.672
+10:26:30,m,30,173,John Kastel,Pan y Agua,94.802,0.317
+10:27:00,m,31,100,Tim Irvine,LGBRC,95.222,0.42
+10:27:30,m,32,89,Don Grijalva,San Jose Bike Club,95.264,0.042
+10:28:00,m,33,45,Pat Callahan,Quadzilla Racing,95.437,0.173
+10:28:30,m,34,512,Romain Laboisse,Palo Verde Velo,96.1074,0.6704
+10:29:00,m,35,135,Mihai R.,Google,96.223,0.1156
+10:29:30,m,36,43,Scott Byer,Google,96.29,0.067
+10:30:00,m,37,159,Plamen Velikov,SLACer,96.802,0.512
+10:30:30,m,38,76,Pierre Doussiere,My LowRacer and myself,96.867,0.065
+10:31:00,m,39,141,Nico Sallembien,Silicon Valley Triathlon,96.898,0.031
+10:31:30,m,40,519,Peter Tapscott,Webcor,98.3177,1.4197
+10:32:00,m,41,511,Jay Kilby,Elkhorn Creek Racing,99.6717,1.354
+10:32:30,m,42,81,Rick Ferrell,Bike Trip/Symantec,99.784,0.1123
+10:33:00,m,43,99,Peter Ingram,Ind.,99.819,0.035
+,,,,,,,
+10:35:00,m,none,501,Eric Anderson,,none,NA
+10:35:30,m,none,502,Jamy Bacchus,Berkeley Bike Club (BBC),none,NA
+10:36:00,m,none,503,Oliver R. Barajas,Eden Bicycles,none,NA
+10:36:30,m,none,505,Mike Gregoire,Taleo Racing,none,NA
+10:37:00,m,none,507,Clay Heberly,,none,NA
+10:37:30,m,none,508,Tom K.,Palo Verde Velo,none,NA
+10:38:00,m,none,510,Jonas Kellner,,none,NA
+10:38:30,m,none,432,Juan Navarro,Gene-Solve/Etxea,none,NA
+10:39:00,m,none,513,Rick Nolthenius,Santa Cruz Track Club,none,NA
+,,,,,,,
+10:41:00,m,44,450,Brad Fox,LGBRC,101.511,1.692
+10:41:30,m,45,243,Eric Doelling,,101.971,0.46
+10:42:00,m,46,315,Chris Mickelsen,,103.504,1.533
+10:42:30,m,47,515,Martin Pieprzyk,,104.379,0.875
+10:43:00,m,48,75,Giles Douglas, Google,104.457,0.078
+10:43:30,m,49,410,Bryn Dole,Blekko,104.738,0.281
+10:44:00,m,50,521,Bob Truel,Blekko,104.876,0.138
+10:44:30,m,51,130,Jim Perreira,,105.154,0.278
+10:45:00,m,52,136,Doug Reynolds,Pan y Agua,105.216,0.062
+10:45:30,m,53,46,Gonzalo Carrillo,Team Fremont FFBC p/b Chipotle,105.349,0.133
+10:46:00,m,54,161,Alan Weatherall,San Jose Bike Club,105.653,0.304
+10:46:30,m,55,516,John Richardson,Webcor/Alto Velo,107.706,2.053
+10:47:00,m,56,417,Brian Haines,Taleo Racing,107.71,0.004
+10:47:30,m,57,145,Takanobu Seimiya,Nikon Cycling club,108.3,0.59
+10:48:00,m,58,97,Martin Hyland,Western Wheelers,108.762,0.462
+10:48:30,m,59,78,Bill Dvorak,,108.923,0.161
+10:49:00,m,60,421,Mark King,IC3 Hammer Nutrition,109.043,0.12
+10:49:30,m,61,73,J.D. Daniels,Eden Bicycles,109.062,0.019
+10:50:00,m,62,412,Robert Easley,Sr's & Mr's of No Mercy,111.202,2.14
+10:50:30,m,63,303,Bill Brier,Team Fremont FFBC p/b Chipotle,111.629,0.427
+10:51:00,m,64,443,H Two Brown,The Brown Zone,111.644,0.015
+10:51:30,m,65,246,Chris Kovacs,Eden Bicycles,112.21,0.566
+10:52:00,m,67,80,Joe Fant,The Brown Zone,113.931,-
+10:52:30,m,66,231,Travis Retzer,Eden Bicycles,113.635,-
+10:53:00,m,68,175,Alexander Komlik,San Jose Bike Club,114.014,0.083
+10:53:30,m,69,509,Kevin Keenan,Sr's & Mr's of No Mercy,115.664,1.65
+10:54:00,m,70,319,Brian Schuster,Dolce Vita Cycling,117.626,1.962
+10:54:30,m,71,239,Dennis Van Hoof,Type 1 Diabetes,117.653,0.027
+10:55:00,m,72,7,James Porter,western wheelers,117.707,0.054
+10:55:30,m,73,172,Morgan Raines,Bike Trip/Symantec,118.209,0.502
+10:56:00,m,74,517,Kevin Susco,Webcor/Alto Velo,118.334,0.125
+10:56:30,m,75,71,Robby Cuthbert,Hausbert,118.628,0.294
+10:57:00,m,76,213,Chris Furgiuele,Dolce Vita Cycling,118.91,0.282
+10:57:30,m,77,92,Rich Hill,LGBRC,119.009,0.099
+10:58:00,m,78,44,Ciaran Byrne,Sr's & Mr's of No Mercy,121.299,2.29
+10:58:30,m,79,95,Jared Hudson,SquadraSF,122.079,0.78
+10:59:00,m,80,438,Kieran Sherlock,Western Wheelers,122.885,0.806
+10:59:30,m,81,149,Daryl Spano,San Jose Bike Club,123.666,0.781
+11:00:00,m,82,38,Rich Brown,The Brown Zone,123.666,0
+11:00:30,m,83,59,David Collet,,123.971,0.305
+11:01:00,m,84,56,Tim Clark,Low-Key,124.5,0.529
+11:01:30,m,85,230,Carl Nielson,Sr's & Mr's of No Mercy,127.219,2.719
+11:02:00,m,86,64,Tracy Colwell,Team Colwell,127.405,0.186
+11:02:30,m,87,212,Clark Foy,Western Wheelers,127.636,0.231
+11:03:00,m,88,525,John Novitsky,,128.571,0.935
+11:03:30,m,89,518,Murray Swanson,Pen Velo/Pomodoro,128.7,0.129
+11:04:00,m,90,120,Rob Manchester,,129.153,0.453
+11:04:30,m,91,504,Menso de Jong,Jelly Belly p/b Kenda,135.897,6.744
+,,,,,,,
+11:15:00,h,1,6,Bill Bushnell,Low-Key,118.924,
